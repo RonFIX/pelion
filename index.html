@@ -8,10 +8,10 @@
 </head>
 <body>
 <div class="source-link">
-  <a class="show-source" href="#" data="simple-jquery-pdf">Show source code</a>
+  <a class="show-source" href="#" data="simple-tag-pdf">Show source code</a>
 </div>
 
-<div class="sample-container">
+<div class="sample-container flip-book-container" src="https://3dflipbook.net/books/pdf/CondoLiving.pdf">
 
 </div>
 
@@ -20,18 +20,6 @@
 <script src="three.min.js"></script>
 <script src="pdf.min.js"></script>
 
-<script type="text/javascript">
-  window.PDFJS_LOCALE = {
-    pdfJsWorker: 'pdf.worker.js',
-    pdfJsCMapUrl: 'cmaps'
-  };
-</script>
 <script src="3dflipbook.min.js"></script>
-
-<script type="text/javascript">
-  $('.sample-container').FlipBook({
-    pdf: 'books/pdf/CondoLiving.pdf',
-    template: {"html":"templates\/default-book-view.html","styles":["css\/font-awesome.min.css","css\/black-book-view.css"],"script":"js\/default-book-view.js","sounds":{"startFlip":"sounds\/start-flip.mp3","endFlip":"sounds\/end-flip.mp3"},"init":"safari-fa-init.html"}  });
-</script>
 </body>
 </html>
