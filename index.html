@@ -1,3 +1,4 @@
+<! --- and 
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,5 +22,44 @@
 <script src="https://3dflipbook.net/js/pdf.min.js"></script>
 
 <script src="https://3dflipbook.net/js/three.min.js"></script>
+</body>
+</html>
+---> 
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Source code</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://3dflipbook.net/js/jquery.min.js"></script>
+</head>
+<body>
+<div class="source-link">
+  <a class="show-source" href="#" data="simple-jquery-pdf">Show source code</a>
+</div>
+
+<div class="sample-container">
+
+</div>
+
+
+
+<script src="https://3dflipbook.net/js/three.min.js"></script>
+<script src="https://3dflipbook.net/js/pdf.min.js"></script>
+
+<script type="text/javascript">
+  window.PDFJS_LOCALE = {
+    pdfJsWorker: 'js/pdf.worker.js',
+    pdfJsCMapUrl: 'cmaps'
+  };
+</script>
+<script src="https://3dflipbook.net/js/3dflipbook.min.js"></script>
+
+<script type="text/javascript">
+  $('.sample-container').FlipBook({
+    pdf: 'books/pdf/CondoLiving.pdf',
+    template: {"html":"templates\/default-book-view.html","styles":["css\/font-awesome.min.css","css\/black-book-view.css"],"script":"js\/default-book-view.js","sounds":{"startFlip":"sounds\/start-flip.mp3","endFlip":"sounds\/end-flip.mp3"},"init":"safari-fa-init.html"}  });
+</script>
 </body>
 </html>
