@@ -4,34 +4,34 @@
 <meta charset="utf-8">
 <title>Source code</title>
 <link rel="stylesheet" href="css/style.css">
-<script src="https://3dflipbook.net/js/jquery.min.js"></script>
+<script src="https://rkei0.csb.app/turn.min.js">
+  var flipbookEL = document.getElementById('flipbook');
+
+window.addEventListener('resize', function (e) {
+	flipbookEL.style.width = '';
+  flipbookEL.style.height = '';
+  $(flipbookEL).turn('size', flipbookEL.clientWidth, flipbookEL.clientHeight);
+});
+
+$(flipbookEL).turn({
+    autoCenter: true
+});
+  </script>
 </head>
 <body>
-<div class="source-link">
-  <a class="show-source" href="#" data="simple-jquery-pdf">Show source code</a>
+<div class="wrapper">
+  <div class="aspect">
+    <div class="aspect-inner">
+      <div class="flipbook" id="flipbook">
+        <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/01.jpg" draggable="false" alt="" /></div>
+        <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/02.jpg" draggable="false" alt="" /></div>
+        <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/03.jpg" draggable="false" alt="" /></div>
+        <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/04.jpg" draggable="false" alt="" /></div>
+        <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/05.jpg" draggable="false" alt="" /></div>
+        <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/06.jpg" draggable="false" alt="" /></div>
+      </div>
+    </div>
+  </div>
 </div>
-
-<div class="sample-container">
-
-</div>
-
-
-
-<script src="https://3dflipbook.net/js/three.min.js"></script>
-<script src="https://3dflipbook.net/js/pdf.min.js"></script>
-
-<script type="text/javascript">
-  window.PDFJS_LOCALE = {
-    pdfJsWorker: 'https://3dflipbook.net/js/pdf.worker.js',
-    pdfJsCMapUrl: 'cmaps'
-  };
-</script>
-<script src="https://3dflipbook.net/js/3dflipbook.min.js"></script>
-
-<script type="text/javascript">
-  $('.sample-container').FlipBook({
-    pdf: 'https://3dflipbook.net/books/pdf/CondoLiving.pdf',
-    template: {"html":"templates\/default-book-view.html","styles":["css\/font-awesome.min.css","css\/black-book-view.css"],"script":"js\/default-book-view.js","sounds":{"startFlip":"sounds\/start-flip.mp3","endFlip":"sounds\/end-flip.mp3"},"init":"safari-fa-init.html"}  });
-</script>
 </body>
 </html>
