@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>Source code</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js" integrity="sha512-poSrvjfoBHxVw5Q2awEsya5daC0p00C8SKN74aVJrs7XLeZAi+3+13ahRhHm8zdAFbI2+/SUIrKYLvGBJf9H3A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://rkei0.csb.app/turn.min.js">
+<script src="https://rkei0.csb.app/turn.min.js"></script>
 <style>
 	html,
 		body {
@@ -60,18 +60,18 @@
 		}
 </style>
 <script>
-  var flipbookEL = document.getElementById('flipbook');
+	var flipbookEL = document.getElementById('flipbook');
 
-window.addEventListener('resize', function (e) {
-	flipbookEL.style.width = '';
-  flipbookEL.style.height = '';
-  $(flipbookEL).turn('size', flipbookEL.clientWidth, flipbookEL.clientHeight);
-});
+	window.addEventListener('resize', function (e) {
+		flipbookEL.style.width = '';
+	  flipbookEL.style.height = '';
+	  $(flipbookEL).turn('size', flipbookEL.clientWidth, flipbookEL.clientHeight);
+	});
 
-$(flipbookEL).turn({
-    autoCenter: true
-});
-  </script>
+	$(flipbookEL).turn({
+	    autoCenter: true
+	});
+</script>
 </head>
 <body>
 <div class="wrapper">
