@@ -59,19 +59,7 @@
 		  height: 100%;
 		}
 </style>
-<script>
-	var flipbookEL = document.getElementById('flipbook');
 
-	window.addEventListener('resize', function (e) {
-		flipbookEL.style.width = '';
-	  flipbookEL.style.height = '';
-	  $(flipbookEL).turn('size', flipbookEL.clientWidth, flipbookEL.clientHeight);
-	});
-
-	$(flipbookEL).turn({
-	    autoCenter: true
-	});
-</script>
 </head>
 <body>
 <div class="wrapper">
@@ -88,5 +76,18 @@
     </div>
   </div>
 </div>
+<script>
+	var flipbookEL = document.getElementById('flipbook');
+
+	window.addEventListener('resize', function (e) {
+		flipbookEL.style.width = '';
+	  flipbookEL.style.height = '';
+	  $(flipbookEL).turn('size', flipbookEL.clientWidth, flipbookEL.clientHeight);
+	});
+
+	$(flipbookEL).turn({
+	    autoCenter: true
+	});
+</script>
 </body>
 </html>
